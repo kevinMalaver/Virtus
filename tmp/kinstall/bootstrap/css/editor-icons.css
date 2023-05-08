@@ -1,0 +1,665 @@
+@font-face {
+	font-family: 'editor';
+	src:url('fonts/editor.eot?datpx6');
+	src:url('fonts/editor.eot?#iefixdatpx6') format('embedded-opentype'),
+		url('fonts/editor.woff?datpx6') format('woff'),
+		url('fonts/editor.ttf?datpx6') format('truetype'),
+		url('fonts/editor.svg?datpx6#editor') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+#Kunena td img.smiley-img {min-width:12px}
+.smiley-img{width:16px;}
+.kpostbuttons div {
+  margin: 6px;
+}
+input.kfile-input {line-height: normal;}
+input.kiconsel {display:none}
+label.kiconsel{display:inline-block}
+input.kiconsel:checked  + label{ border: 1px solid #6D716E;}
+table td.kpostbuttons{border-top:0px;margin:0px; padding: 0px;}
+td.kprofile-left {
+  width: 10%;
+  min-width: 80px;
+}
+.kstatsicon:before,.kwhoicon:before{
+	font-size: 200%;
+}
+span.kicon-profile {
+  display: inline-block;
+  padding: 0;
+  padding-right:3px;
+  margin: 0;
+  opacity: 0.6;
+}
+
+#kbbcode-toolbar a,.kicon-profile,.kstatsicon {
+ /*  border: 1px solid #ccc; */
+  width: 16px;
+  padding: 4px;
+  text-align: center;
+  display: block;
+  color: #111;
+  font-family: 'editor';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* line-height: 2; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 2px;
+  height: 20px;
+  font-size: 16px;
+}
+#kbbcode-toolbar {
+  margin: 0;
+  list-style: none;
+  border-left: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+#kbbcode-toolbar li{
+	display:inline-block;
+	border-right: 1px solid #EDEDED;
+}
+#kbbcode-toolbar span{
+  display:none;
+}
+#kbbcode-toolbar .kbbcode-separator{display:none}
+#kbbcode-user-button:before,.kwho-user:before {
+	content: "\f007";font-family: 'editor';
+	padding-right: 4px;
+}
+.kavatar .kwho-user:before,.kavatar .kwho-admin:before,.kavatar .kwho-guest:before,.kavatar .kwho-moderator:before ,.kavatar .kwho-globalmoderator:before {
+	content: "";
+	padding-right: 0px;
+}
+#kbbcode-video-button:before {
+	content: "\f008";
+}
+
+#kbbcode-check-button:before {
+	content: "\f00c";
+}
+
+#kbbcode-close-button:before {
+	content: "\f00d";
+}
+
+#kbbcode-remove-button:before {
+	content: "\f00d";
+}
+
+#kbbcode-times-button:before {
+	content: "\f00d";
+}
+
+#kbbcode-trash-o-button:before {
+	content: "\f014";
+}
+
+#kbbcode-font-button:before {
+	content: "\f031";
+}
+
+#kbbcode-bold-button:before {
+	content: "\f032";
+}
+
+#kbbcode-italic-button:before {
+	content: "\f033";
+}
+
+#kbbcode-size-button:before {
+	content: "\f034";
+}
+
+#kbbcode-left-button:before {
+	content: "\f036";
+}
+
+#kbbcode-center-button:before {
+	content: "\f037";
+}
+
+#kbbcode-right-button:before {
+	content: "\f038";
+}
+
+#kbbcode-image-button:before {
+	content: "\f03e";
+}
+
+#kbbcode-photo-button:before {
+	content: "\f03e";
+}
+
+#kbbcode-picture-o-button:before {
+	content: "\f03e";
+}
+
+#kbbcode-map-button:before,.kicon-profile-location:before{
+	content: "\f041";
+}
+
+#kbbcode-color-button:before {
+	content: "\f043";
+}
+
+#kbbcode-help-button:before {
+	content: "\f059";
+}
+
+#kbbcode-spoiler-button:before {
+	content: "\f070";
+}
+
+#kbbcode-ebay-button:before {
+	content: "\f09d";
+}
+
+#kbbcode-chain-button:before {
+	content: "\f0c1";
+}
+
+#kbbcode-link-button:before{
+	content: "\f0c1";
+}
+
+.kicon-profile-website:before {
+	content: "\f0ac";
+}
+#kbbcode-floppy-o-button:before {
+	content: "\f0c7";
+}
+
+#kbbcode-save-button:before {
+	content: "\f0c7";
+}
+
+#kbbcode-list-button:before {
+	content: "\f0c9";
+}
+
+#kbbcode-navicon-button:before {
+	content: "\f0c9";
+}
+
+#kbbcode-reorder-button:before {
+	content: "\f0c9";
+}
+
+#kbbcode-ulist-button:before {
+	content: "\f0ca";
+}
+
+#kbbcode-olist-button:before {
+	content: "\f0cb";
+}
+
+#kbbcode-strike-button:before {
+	content: "\f0cc";
+}
+
+#kbbcode-underline-button:before {
+	content: "\f0cd";
+}
+
+#kbbcode-table-button:before {
+	content: "\f0ce";
+}
+
+#kbbcode-comment-o-button:before {
+	content: "\f0e5";
+}
+
+#kbbcode-code-button:before {
+	content: "\f121";
+}
+
+#kbbcode-question-button:before {
+	content: "\f128";
+}
+
+#kbbcode-sup-button:before {
+	content: "\f12b";
+}
+
+#kbbcode-sub-button:before {
+	content: "\f12c";
+}
+
+#kbbcode-youtube-button:before {
+	content: "\f167";
+}
+
+#kbbcode-female-button:before,.kicon-profile-gender-female:before {
+	content: "\f182";
+}
+
+#kbbcode-male-button:before,.kicon-profile-gender-male:before {
+	content: "\f183";
+}
+#kbbcode-unknown-button:before,.kicon-profile-gender-unknown:before {
+	content: "\f183";
+}
+#kbbcode-hide-button:before {
+	content: "\f234";
+}
+
+#kbbcode-user-times-button:before {
+	content: "\f235";
+}
+#kbbcode-poll-button:before {
+	content: "\f0a6";
+}
+#kbbcode-quote-button:before {
+	content: "\f10e";
+}
+.kicon-profile-message:before {
+	content: "\f003";
+}
+
+.kicon-profile-user:before {
+	content: "\f007";
+}
+.kicon-profile-pm:before {
+	content: "\f003";
+}
+
+.kicon-profile-film:before {
+	content: "\f008";
+}
+
+.kicon-profile-check:before {
+	content: "\f00c";
+}
+
+.kicon-profile-close:before {
+	content: "\f00d";
+}
+
+.kicon-profile-trash:before {
+	content: "\f014";
+}
+
+.kicon-profile-font:before {
+	content: "\f031";
+}
+
+.kicon-profile-bold:before {
+	content: "\f032";
+}
+
+.kicon-profile-italic:before {
+	content: "\f033";
+}
+
+.kicon-profile-text-height:before {
+	content: "\f034";
+}
+
+.kicon-profile-left:before {
+	content: "\f036";
+}
+
+.kicon-profile-center:before {
+	content: "\f037";
+}
+
+.kicon-profile-right:before {
+	content: "\f038";
+}
+
+.kicon-profile-image:before {
+	content: "\f03e";
+}
+
+.kicon-profile-map:before {
+	content: "\f041";
+}
+
+.kicon-profile-tint:before {
+	content: "\f043";
+}
+
+.kicon-profile-question:before {
+	content: "\f059";
+}
+
+.kicon-profile-eye-slash:before {
+	content: "\f070";
+}
+
+.kicon-profile-credit-card:before {
+	content: "\f09d";
+}
+
+.kicon-profile-weblink:before {
+	content: "\f0ac";
+}
+
+.kicon-profile-chain:before {
+	content: "\f0c1";
+}
+
+.kicon-profile-save:before {
+	content: "\f0c7";
+}
+
+.kicon-profile-list:before {
+	content: "\f0c9";
+}
+
+.kicon-profile-ulist:before {
+	content: "\f0ca";
+}
+
+.kicon-profile-olist:before {
+	content: "\f0cb";
+}
+
+.kicon-profile-strikethrough:before {
+	content: "\f0cc";
+}
+
+.kicon-profile-underline:before {
+	content: "\f0cd";
+}
+
+.kicon-profile-table:before {
+	content: "\f0ce";
+}
+
+.kicon-profile-gavel:before {
+	content: "\f0e3";
+}
+
+.kicon-profile-legal:before {
+	content: "\f0e3";
+}
+
+.kicon-profile-comment:before {
+	content: "\f0e5";
+}
+
+.kicon-profile-quote-right:before {
+	content: "\f10e";
+}
+
+.kicon-profile-github-alt:before {
+	content: "\f113";
+}
+
+.kicon-profile-code:before {
+	content: "\f121";
+}
+
+.kicon-profile-help:before {
+	content: "\f128";
+}
+
+.kicon-profile-sup:before {
+	content: "\f12b";
+}
+
+.kicon-profile-sub:before {
+	content: "\f12c";
+}
+
+.kicon-profile-rss:before {
+	content: "\f143";
+}
+
+.kicon-profile-thumbs-up:before {
+	content: "\f164";
+}
+
+.kicon-profile-thumbs-down:before {
+	content: "\f165";
+}
+
+.kicon-profile-female:before {
+	content: "\f182";
+}
+
+.kicon-profile-male:before {
+	content: "\f183";
+}
+
+.kicon-profile-hand-o-up:before {
+	content: "\f0a6";
+}
+
+.kicon-profile-envelope-square:before {
+	content: "\f199";
+}
+
+.kicon-profile-birthdate:before {
+	content: "\f1fd";
+}
+
+.kicon-profile-unknown:before {
+	content: "\f21b";
+}
+.kwho-guest:before {
+	content: "\f21b";
+	font-family: 'editor';
+	padding-right: 4px;
+}
+.kwho-banned:before {
+	content: "\f235";
+	font-family: 'editor';
+	padding-right: 4px;
+}
+.kwho-moderator:before, .kwho-globalmoderator:before {
+	content: "\f0c0";
+	font-family: 'editor';
+	padding-right: 4px;
+	color: #86BA08;
+}
+.kwho-globalmoderator:before {
+	font-size:120%;
+}
+.kwho-admin:before {
+	content: "\e976";
+	font-family: 'editor';
+	padding-right: 4px;
+	font-size:120%;
+	margin-left: -2px;
+	color: #CC4D00;
+}
+.ktopic-latest-post-avatar a:before,.ktopic-latest-post-avatar span:before,.klatest-avatar  a:before,.klatest-avatar  span:before{content:""}
+.kicon-profile-paper-plane-o:before {
+	content: "\f1d9";
+}
+
+.kicon-profile-send-o:before {
+	content: "\f1d9";
+}
+
+.kicon-profile-share-alt:before {
+	content: "\f1e0";
+}
+
+.kicon-profile-quote:before {
+	content: "\f1e8";
+}
+
+.kicon-profile-mail:before {
+	content: "\f1fa";
+}
+
+.kicon-profile-chart:before,.kstatsicon:before {
+	content: "\f201";
+}
+
+.kicon-profile-user-plus:before {
+	content: "\f234";
+}
+
+.kicon-profile-user-times:before {
+	content: "\f235";
+}
+.kicon-profile-users:before {
+	content: "\f0c0";
+}
+
+/*Social icons*/
+
+.kicon-profile-twitter-square:before {
+	content: "\f081";
+}
+
+.kicon-profile-linkedin:before ,.kicon-profile-linkedin-off:before {
+	content: "\f08c";color: #0177B5;
+}
+
+.kicon-profile-twitter:before, .kicon-profile-twitter-off:before {
+	content: "\f099"; color: #5EA9DD; 
+}
+
+.kicon-profile-github:before {
+	content: "\f09b";
+}
+
+.kicon-profile-pinterest-square:before {
+	content: "\f0d3";
+}
+
+.kicon-profile-google-plus-square:before {
+	content: "\f0d4";
+}
+
+.kicon-profile-google-plus:before {
+	content: "\f0d5";
+}
+
+.kicon-profile-linkedin:before {
+	content: "\f0e1";
+}
+
+.kicon-profile-youtube:before {
+	content: "\f167";
+}
+
+.kicon-profile-dribbble:before {
+	content: "\f17d";
+}
+
+.kicon-profile-skype:before, .kicon-profile-skype-off:before {
+	content: "\f17e";color:#00AFF0
+}
+
+.kicon-profile-reddit:before,.kicon-profile-reddit-off:before {
+	content: "\f1a2";
+}
+
+.kicon-profile-delicious:before, .kicon-profile-delicious-off:before {
+	content: "\f1a5";
+}
+
+.kicon-profile-digg:before ,.kicon-profile-digg-off:before {
+	content: "\f1a6";
+}
+
+.kicon-profile-drupal:before {
+	content: "\f1a9";
+}
+
+.kicon-profile-behance:before {
+	content: "\f1b4";
+}
+
+.kicon-profile-hacker-news:before {
+	content: "\f1d4";
+}
+
+
+.kicon-profile-lastfm:before {
+	content: "\f202";
+}
+
+
+.kicon-profile-facebook:before, .kicon-profile-facebook-off:before {
+	content: "\f230";color:#3B5998
+}
+
+.kicon-profile-pinterest:before ,.kicon-profile-pinterest-off:before {
+	content: "\f231";
+}
+
+
+.kicon-profile-msn:before,.kicon-profile-msn-off:before {
+	content: "\4f";color:#0A3480
+}
+.kicon-profile-digg:before,.kicon-profile-digg-off:before {
+	content: "\f1a6";color:#1B5891;
+}
+.kicon-profile-gtalk:before,.kicon-profile-gtalk-off:before {
+	content: "\67";color:#ED3420
+}
+.kicon-profile-aim:before,.kicon-profile-aim-off:before {
+	content: "\51";color:#F8C900;
+}
+.kicon-profile-yim:before, .kicon-profile-yim-off:before {
+	content: "\5a";color:#65106E;
+}
+.kicon-profile-blogger:before, .kicon-profile-blogger-off:before {
+	content: "\62";color:#FF6501
+}
+.kicon-profile-flickr:before,.kicon-profile-flickr-off:before {
+	content: "\43";color:#0062DD
+}
+.kicon-profile-yelp:before,.kicon-profile-yelp-off:before {
+	content: "\59";color:#C41200
+}
+.kicon-profile-myspace:before,.kicon-profile-myspace-off:before {
+	content: "\4d";color:#039
+}
+.kicon-profile-bebo:before, .kicon-profile-bebo-off:before {
+	content: "\e601";color:#EE0F10
+}
+
+.kicon-profile-friendfeed:before,.kicon-profile-friendfeed-off:before {
+	content: "\e602";color:#3275C4
+}
+
+.kicon-profile-icq:before, .kicon-profile-icq-off:before {
+	content: "\e600";color:#15B900;
+}
+
+.kicon-profile-blogspot:before,.kicon-profile-blogspot-off:before {
+	content: "\62";color:#FE6603
+}
+span.kicon-profile-twitter,span.kicon-profile-facebook,span.kicon-profile-linkedin,span.kicon-profile-skype,span.kicon-profile-digg,span.kicon-profile-delicious{opacity:1 !important;}
+
+.grid_unpublish:before {
+	content: "\f00c";
+	font-family: 'editor';
+	color: green;
+	font-size:32px;
+}
+.grid_publish:before {
+	content: "\f00d";
+	font-family: 'editor';
+	color: #D10404;
+	font-size:32px;
+}
+
+.attach-icon{
+	color: #333;
+  font-family: 'WysiBBiconFont';
+  font-size: 18px;
+  line-height: 28px;
+  text-shadow: 0px 1px 0px #fff;
+  text-align: center;
+  speak: none;
+}
+.attach-icon:before{
+  content :"\E017";
+}
+
+.online-yes {color: rgb(0, 221, 0);font-size: 90%;}
+.online-no{color:#BBB;font-size: 90%}

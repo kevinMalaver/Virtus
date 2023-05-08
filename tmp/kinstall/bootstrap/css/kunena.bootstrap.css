@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/**
+* Kunena Component
+* @package Kunena.Template.Bootstrap
+*
+* @copyright (C) 2008 - 2015 Kunena Team. All rights reserved.
+* @license http://www.gnu.org/copyleft/gpl.html GNU/GPL
+* @link http://www.kunena.org
+**/
+
+/* Layout */
+#Kunena {
+  margin: 0;
+  /* background: #fff; */
+  padding: 5px 7px;
+}
+#Kunena .page-header {
+  border-bottom: 0px;
+}
+
+#Kunena h4 {
+  margin: 8px 0px 6px;
+  padding: 0;
+}
+#Kunena .well{  padding: 5px;}
+#Kunena td img {
+  min-width: 32px;
+}
+#Kunena .close {
+  clear: right;
+  padding-top: 4px;
+}
+.kiconrow.nowrap {
+  display: inline;
+  white-space: nowrap;
+}
+/* fix for pagination*/
+#Kunena .pagination{margin-top:5px}
+.pagination .kpagination{border:1px solid #dddddd;border-right:0px solid}
+.pagination .kpagination li{float:left;padding:4px ; border-right:1px solid #dddddd}
+.pagination .kpagination li a,.pagination .kpagination li span{ margin: -4px;border:0px}
+.pull-right select{margin-bottom:0;}
+.grid_desc:before {
+	content: "\e00f";
+	font-family: 'IcoMoon';
+	speak: none;
+}
+.grid_asc:before {
+	content: "\e011";
+	font-family: 'IcoMoon';
+	speak: none;
+}
+.klatest-avatar,.ktopic-latest-post-avatar{display:block;text-align:center;}
+.ktopic-date{white-space: nowrap;}
+#Kunena td img.klist-avatar {
+  min-width: 64px;
+}
+.ktopicmoderation{
+	width:1%;
+}
+.kcol-ktopiclastpost{
+	width:100px;
+}
+.kcheckbox.select-toggle {
+  float:right;
+  margin-right: 1%;
+  margin-top: 12px;
+}
+label.kiconsel img {
+  width: 24px;
+}
+td.visible-desktop {
+  display: table-cell!important;
+}
+@media (max-width: 767px) {
+	td.visible-desktop {
+	  display: none !important;
+	}
+}
+
+.kcol-first span.icon {
+  font-size: 200%;
+}
+.smaller {
+  padding: 0px 4px 0px 0px;
+  color: #09F;
+  font-weight: normal;
+  font-size: 90%;
+}
+.kchildcount,.kcat-topics,.kcat-topics-number,.kcat-replies-number,.kcat-replies{opacity: 0.50;}
+.kcol-kcatlastpost{  min-width: 132px;
+}
+td.kcol-kcattopics,td.kcol-kcatreplies,td.kcol-ktopicviews,td.kcol-ktopicreplies,td.kmycount{text-align:center;}
+#Kunena .btn-mini {
+  padding: 1px 3px 1px;
+  margin: 2px 0px;
+  vertical-align: text-bottom;
+  font-size: 100%;
+}
+#Kunena .btn-mini [class*=" icon-"],#Kunena .btn-mini [class^="icon-"]{
+  margin-top: 0px;
+}
+ul.kpost-profile{
+  margin-left: 0;
+  list-style: none;
+  margin-right: 8px;
+}
+.input-xxlarge{width:98%}
+a.ktoggler.icon.icon-minus-circle.open{
+  float: right;
+  clear: right;
+  padding-top:4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.kcol-kcattopics span,.kcol-ktopicviews span,.kcol-ktopicreplies  span,.kmycount span{display:block;opacity: 0.50;}
+.kcat-topics-number,.kcat-replies-number,.ktopic-views-number,.knumber{  font-size: 200%;
+  line-height: 1.5em;
+}
+.kcol-mid.kcol-kcattitle,.kcol-ktopictitle,td.kprofileboxcnt {
+  width: 100%;
+}
+td.kcol-anntitle {
+  width: 68%;
+}
+
+#Kunena .btn{vertical-align:inherit}
+.popover .popover-content {
+  font-weight: normal;
+  font-size: small;
+  overflow: hidden;
+  margin: 9px 14px;
+  padding: 0px;
+}
+.kprofileboxcnt{vertical-align:top}
+
+span.editlinktip {
+  padding-top: 6px;
+}
+.kfile-input-textbox {
+  width: 200px;
+  display: block;
+  padding: 7px;
+  margin-right:4px;
+}
+span.editlinktip.hide-kupload{padding-top:0px;}
+.hide-kupload {
+  position: relative;
+  display: block;
+  float: left;
+}
+#Kunena .kfile-input-button {vertical-align:top;}
+#Kunena .kfile-input 
+{
+  opacity: 0;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+#kattachment-id{margin-bottom:6px;}
+
+#kpopsubstats-tbody .progress{margin:1px;}
+
+#Kunena .collapse{overflow: hidden;}
+#Kunena .collapse.in{overflow: visible;}
+#Kunena .collapse {
+
+  -webkit-transition: all 0.01s ease;
+  -moz-transition: all 0.01s ease;
+  -o-transition: all 0.01s ease;
+  transition: all 0.01s ease;
+}
+.kprofilebox-link.nav{margin-bottom:0px}
+
+td.kbuttonbar-left{vertical-align:bottom}

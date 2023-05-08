@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE kinstall>
+<kinstall type="kunena-template" version="2.0">
+	<name>Bootstrap</name>
+	<creationDate>2015-04-04</creationDate>
+	<version>3.0.8.4</version>
+	<author>Patrick Kohl</author>
+	<authorEmail>studiofrance@gmail.com</authorEmail>
+	<authorUrl>http://www.st42.fr</authorUrl>
+	<copyright>Studio 42 France</copyright>
+	<license>GNU/GPL</license>
+	<description>COM_KUNENA_TEMPLATE_BOOTSTRAP_DESC</description>
+	<thumbnail>template_thumbnail.png</thumbnail>
+	<config>
+		<field name="displayMenu" type="list" default="1"
+			label="COM_KUNENA_TEMPLATE_DISPLAY_MENU"
+			description="COM_KUNENA_TEMPLATE_DISPLAY_MENU_DESC"
+					
+		>
+			<option value="0">COM_KUNENA_NO</option>
+			<option value="1">COM_KUNENA_YES</option>
+		</field>
+
+		<field name="avatarPosition" type="list" default="left"
+			label="COM_KUNENA_TEMPLATE_PROFILE_POSITION"
+			description="COM_KUNENA_TEMPLATE_PROFILEPOSITION_DESC"
+					
+		>
+			<option value="left">COM_KUNENA_TEMPLATE_LEFT</option>
+			<option value="top">COM_KUNENA_TEMPLATE_TOP</option>
+			<option value="right">COM_KUNENA_TEMPLATE_RIGHT</option>
+			<option value="bottom">COM_KUNENA_TEMPLATE_BOTTOM</option>
+		</field>
+
+		<field name="enableSkinner" type="list" default="0" 
+			label="COM_KUNENA_TEMPLATE_SKINNER" 
+			description="COM_KUNENA_TEMPLATE_SKINNER_DESC"
+		>
+			<option value="0">COM_KUNENA_NO</option>
+			<option value="1">COM_KUNENA_YES</option>
+		</field>
+
+
+    <!-- Required for third party templates, the default value need to be set to avoid issues in template manager -->
+    <field name="templatebyText" type="hidden" default=" Bootstrap theme " />
+    <field name="templatebyName" type="hidden" default="STUDIO 42" />
+    <field name="templatebyLink" type="hidden" default="http://shop.st42.fr"/>
+
+		<!-- Required avatar sizes -->
+		<field name="avatarSizeXThumb" type="hidden" default="36" />
+		<field name="avatarSizeYThumb" type="hidden" default="36" />
+		<field name="avatarSizeXWelcome" type="hidden" default="72" />
+		<field name="avatarSizeYWelcome" type="hidden" default="72" />
+		<field name="avatarSizeXList" type="hidden" default="36" />
+		<field name="avatarSizeYList" type="hidden" default="36" />
+		<field name="avatarSizeXPost" type="hidden" default="144" />
+		<field name="avatarSizeYPost" type="hidden" default="144" />
+		<field name="avatarSizeXProfile" type="hidden" default="200" />
+		<field name="avatarSizeYProfile" type="hidden" default="200" />
+		
+		<field name="lastPostSubjectLength" type="text" default="20" label="COM_KUNENA_TEMPLATE_LAST_POST_SUBJECT_LENGTH" description="COM_KUNENA_TEMPLATE_LAST_POST_SUBJECT_LENGTH_DESC" />
+	</config>
+</kinstall>

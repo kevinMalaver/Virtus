@@ -1,0 +1,417 @@
+@font-face {
+	font-family: 'editor';
+	src:url('fonts/editor.eot?-1xylet');
+	src:url('fonts/editor.eot?#iefix-1xylet') format('embedded-opentype'),
+		url('fonts/editor.woff?-1xylet') format('woff'),
+		url('fonts/editor.ttf?-1xylet') format('truetype'),
+		url('fonts/editor.svg?-1xylet#editor') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.kicon-profile {
+	font-family: 'editor';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.kicon-profile-admin:before {
+	content: "\e976";
+}
+
+.kicon-profile-icq:before {
+	content: "\e600";
+}
+
+.kicon-profile-bebo:before {
+	content: "\e601";
+}
+
+.kicon-profile-friendfeed:before {
+	content: "\e602";
+}
+
+.kicon-profile-win:before {
+	content: "\45";
+}
+
+.kicon-profile-I:before {
+	content: "\4a";
+}
+
+.kicon-profile-J:before {
+	content: "\4b";
+}
+
+.kicon-profile-K:before {
+	content: "\4c";
+}
+
+.kicon-profile-L:before {
+	content: "\4e";
+}
+
+.kicon-profile-msn:before {
+	content: "\4f";
+}
+
+.kicon-profile-O:before {
+	content: "\52";
+}
+
+.kicon-profile-Z:before {
+	content: "\5b";
+}
+
+.kicon-profile-flickr:before {
+	content: "\43";
+}
+
+.kicon-profile-OpenId:before {
+	content: "\48";
+}
+
+.kicon-profile-myspace:before {
+	content: "\4d";
+}
+
+.kicon-profile-aim:before {
+	content: "\51";
+}
+
+.kicon-profile-technorati:before {
+	content: "\55";
+}
+
+.kicon-profile-yelp:before {
+	content: "\59";
+}
+
+.kicon-profile-yahoo:before {
+	content: "\5a";
+}
+
+.kicon-profile-blogger:before {
+	content: "\62";
+}
+
+.kicon-profile-google:before {
+	content: "\67";
+}
+
+.kicon-profile-netvibes:before {
+	content: "\6a";
+}
+
+.kicon-profile-message:before {
+	content: "\f003";
+}
+
+.kicon-profile-user:before {
+	content: "\f007";
+}
+
+.kicon-profile-film:before {
+	content: "\f008";
+}
+
+.kicon-profile-check:before {
+	content: "\f00c";
+}
+
+.kicon-profile-close:before {
+	content: "\f00d";
+}
+
+.kicon-profile-trash:before {
+	content: "\f014";
+}
+
+.kicon-profile-font:before {
+	content: "\f031";
+}
+
+.kicon-profile-bold:before {
+	content: "\f032";
+}
+
+.kicon-profile-italic:before {
+	content: "\f033";
+}
+
+.kicon-profile-text-height:before {
+	content: "\f034";
+}
+
+.kicon-profile-left:before {
+	content: "\f036";
+}
+
+.kicon-profile-center:before {
+	content: "\f037";
+}
+
+.kicon-profile-right:before {
+	content: "\f038";
+}
+
+.kicon-profile-image:before {
+	content: "\f03e";
+}
+
+.kicon-profile-map:before {
+	content: "\f041";
+}
+
+.kicon-profile-tint:before {
+	content: "\f043";
+}
+
+.kicon-profile-question:before {
+	content: "\f059";
+}
+
+.kicon-profile-eye-slash:before {
+	content: "\f070";
+}
+
+.kicon-profile-twitter-square:before {
+	content: "\f081";
+}
+
+.kicon-profile-linkedin-square:before {
+	content: "\f08c";
+}
+
+.kicon-profile-twitter:before {
+	content: "\f099";
+}
+
+.kicon-profile-github:before {
+	content: "\f09b";
+}
+
+.kicon-profile-credit-card:before {
+	content: "\f09d";
+}
+
+.kicon-profile-weblink:before {
+	content: "\f0ac";
+}
+
+.kicon-profile-group:before {
+	content: "\f0c0";
+}
+
+.kicon-profile-users:before {
+	content: "\f0c0";
+}
+
+.kicon-profile-chain:before {
+	content: "\f0c1";
+}
+
+.kicon-profile-save:before {
+	content: "\f0c7";
+}
+
+.kicon-profile-list:before {
+	content: "\f0c9";
+}
+
+.kicon-profile-ulist:before {
+	content: "\f0ca";
+}
+
+.kicon-profile-olist:before {
+	content: "\f0cb";
+}
+
+.kicon-profile-strikethrough:before {
+	content: "\f0cc";
+}
+
+.kicon-profile-underline:before {
+	content: "\f0cd";
+}
+
+.kicon-profile-table:before {
+	content: "\f0ce";
+}
+
+.kicon-profile-pinterest-square:before {
+	content: "\f0d3";
+}
+
+.kicon-profile-google-plus-square:before {
+	content: "\f0d4";
+}
+
+.kicon-profile-google-plus:before {
+	content: "\f0d5";
+}
+
+.kicon-profile-linkedin:before {
+	content: "\f0e1";
+}
+
+.kicon-profile-gavel:before {
+	content: "\f0e3";
+}
+
+.kicon-profile-legal:before {
+	content: "\f0e3";
+}
+
+.kicon-profile-comment:before {
+	content: "\f0e5";
+}
+
+.kicon-profile-quote-right:before {
+	content: "\f10e";
+}
+
+.kicon-profile-github-alt:before {
+	content: "\f113";
+}
+
+.kicon-profile-code:before {
+	content: "\f121";
+}
+
+.kicon-profile-help:before {
+	content: "\f128";
+}
+
+.kicon-profile-sup:before {
+	content: "\f12b";
+}
+
+.kicon-profile-sub:before {
+	content: "\f12c";
+}
+
+.kicon-profile-rss:before {
+	content: "\f143";
+}
+
+.kicon-profile-thumbs-up:before {
+	content: "\f164";
+}
+
+.kicon-profile-thumbs-down:before {
+	content: "\f165";
+}
+
+.kicon-profile-youtube:before {
+	content: "\f167";
+}
+
+.kicon-profile-dribbble:before {
+	content: "\f17d";
+}
+
+.kicon-profile-skype:before {
+	content: "\f17e";
+}
+
+.kicon-profile-female:before {
+	content: "\f182";
+}
+
+.kicon-profile-male:before {
+	content: "\f183";
+}
+
+.kicon-profile-hand-o-up:before {
+	content: "\f0a6";
+}
+
+.kicon-profile-envelope-square:before {
+	content: "\f199";
+}
+
+.kicon-profile-reddit:before {
+	content: "\f1a2";
+}
+
+.kicon-profile-delicious:before {
+	content: "\f1a5";
+}
+
+.kicon-profile-digg:before {
+	content: "\f1a6";
+}
+
+.kicon-profile-drupal:before {
+	content: "\f1a9";
+}
+
+.kicon-profile-behance:before {
+	content: "\f1b4";
+}
+
+.kicon-profile-hacker-news:before {
+	content: "\f1d4";
+}
+
+.kicon-profile-paper-plane-o:before {
+	content: "\f1d9";
+}
+
+.kicon-profile-send-o:before {
+	content: "\f1d9";
+}
+
+.kicon-profile-share-alt:before {
+	content: "\f1e0";
+}
+
+.kicon-profile-quote:before {
+	content: "\f1e8";
+}
+
+.kicon-profile-mail:before {
+	content: "\f1fa";
+}
+
+.kicon-profile-birthday:before {
+	content: "\f1fd";
+}
+
+.kicon-profile-chart:before {
+	content: "\f201";
+}
+
+.kicon-profile-lastfm:before {
+	content: "\f202";
+}
+
+.kicon-profile-unknow:before {
+	content: "\f21b";
+}
+
+.kicon-profile-facebook:before {
+	content: "\f230";
+}
+
+.kicon-profile-pinterest:before {
+	content: "\f231";
+}
+
+.kicon-profile-user-plus:before {
+	content: "\f234";
+}
+
+.kicon-profile-user-times:before {
+	content: "\f235";
+}
+

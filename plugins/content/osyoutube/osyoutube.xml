@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="content" method="upgrade">
+    <name>PLG_CONTENT_OSYOUTUBE</name>
+    <author>Joomlashack</author>
+    <authorEmail>help@joomlashack.com</authorEmail>
+    <authorUrl>https://www.joomlashack.com/</authorUrl>
+    <copyright>Copyright 2016-2022 Joomlashack.com</copyright>
+    <license>GNU GPL; see LICENSE file</license>
+    <description>PLG_CONTENT_OSYOUTUBE_DESCRIPTION</description>
+    <version>4.0.2</version>
+    <creationDate>November 07 2022</creationDate>
+    <variant>FREE</variant>
+
+    <scriptfile>script.installer.php</scriptfile>
+
+    <files>
+        <folder>form</folder>
+        <folder>language</folder>
+        <folder>library</folder>
+        <folder>views</folder>
+
+        <filename plugin="osyoutube">osyoutube.php</filename>
+        <filename>index.html</filename>
+        <filename>include.php</filename>
+    </files>
+
+    <media destination="plg_content_osyoutube" folder="media">
+        <folder>css</folder>
+        <folder>images</folder>
+    </media>
+
+    <config addfieldpath="/plugins/content/osyoutube/form/fields">
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="responsive"
+                       type="radio"
+                       layout="joomla.form.field.radio.switcher"
+                       class="btn-group btn-group-yesno"
+                       default="1"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_RESPONSIVE_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field name="width"
+                       type="text"
+                       default="425"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_WIDTH_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_WIDTH_DESC"
+                       showon="responsive:0"/>
+
+                <field name="height"
+                       type="text"
+                       default="344"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_HEIGHT_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_HEIGHT_DESC"
+                       showon="responsive:0"/>
+
+                <field name="ignore_html_links"
+                       type="radio"
+                       layout="joomla.form.field.radio.switcher"
+                       class="btn-group btn-group-yesno"
+                       default="0"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_IGNORE_HTML_LINKS_LABEL"
+                       description="PLG_CONTENT_OSYOUTUBE_FIELD_IGNORE_HTML_LINKS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field type="customfooter"
+                       name="customfooter"
+                       media="plg_content_osyoutube"
+                       showgoproad="https://www.joomlashack.com/joomla-extensions/osyoutube/"
+                       jedurl="https://extensions.joomla.org/extension/osyoutube/"/>
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="debug"
+                       type="radio"
+                       layout="joomla.form.field.radio.switcher"
+                       class="btn-group btn-group-yesno"
+                       label="PLG_CONTENT_OSYOUTUBE_FIELD_DEBUG_LABEL"
+                       default="0">
+                    <option value="1">JON</option>
+                    <option value="0">JOFF</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="OSYouTube Free"><![CDATA[https://deploy.ostraining.com/client/update/free/stable/plg_content_osyoutube]]></server>
+    </updateservers>
+
+    <alledia>
+        <element publish="true">osyoutube</element>
+        <namespace>OSYouTube</namespace>
+        <license>free</license>
+        <targetplatform>3.9</targetplatform>
+        <phpminimum>7.2.5</phpminimum>
+
+        <relatedExtensions>
+            <extension type="library"
+                       element="allediaframework">ShackFramework</extension>
+
+            <extension type="plugin"
+                       group="system"
+                       element="osmylicensesmanager"
+                       publish="true"
+                       ordering="last">ShackExtensionSupport</extension>
+        </relatedExtensions>
+
+        <include>ShackDefaultFiles</include>
+
+        <obsolete>
+            <file>/plugins/content/osyoutube/library/Free/Embed.php</file>
+            <file>/plugins/content/osyoutube/style.css</file>
+        </obsolete>
+    </alledia>
+</extension>
